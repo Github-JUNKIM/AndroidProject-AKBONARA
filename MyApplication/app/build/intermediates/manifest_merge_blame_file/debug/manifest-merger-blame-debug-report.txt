@@ -1,0 +1,124 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.myapplication"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="17"
+8-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+11-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:5:5-79
+11-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:5:22-77
+12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+12-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:6:5-80
+12-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:6:22-78
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:8:5-66
+13-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:8:22-64
+14    <uses-permission android:name="android.permission.CAMERA" />
+14-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:9:5-64
+14-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:9:22-62
+15
+16    <uses-feature android:name="android.hardware.camera" />
+16-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:10:5-59
+16-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:10:19-57
+17
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->[com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.5] C:\Users\ns933\.gradle\caches\transforms-2\files-2.1\8fc802e6aced74344f63bfcf0b0d0926\jetified-core-10.0.5\AndroidManifest.xml:12:5-79
+18-->[com.pierfrancescosoffritti.androidyoutubeplayer:core:10.0.5] C:\Users\ns933\.gradle\caches\transforms-2\files-2.1\8fc802e6aced74344f63bfcf0b0d0926\jetified-core-10.0.5\AndroidManifest.xml:12:22-76
+19
+20    <application
+20-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:14:5-59:19
+21        android:allowBackup="true"
+21-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:15:9-35
+22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+22-->[androidx.core:core:1.3.1] C:\Users\ns933\.gradle\caches\transforms-2\files-2.1\ae3468b444d41a56f261ecbb8448fe17\core-1.3.1\AndroidManifest.xml:24:18-86
+23        android:debuggable="true"
+24        android:icon="@mipmap/ic_launcher"
+24-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:16:9-43
+25        android:label="@string/app_name"
+25-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:17:9-41
+26        android:roundIcon="@mipmap/ic_launcher_round"
+26-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:18:9-54
+27        android:supportsRtl="true"
+27-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:19:9-35
+28        android:testOnly="true"
+29        android:theme="@style/AppTheme" >
+29-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:20:9-40
+30        <activity android:name="com.example.myapplication.MainActivity" >
+30-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:22:9-27:20
+30-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:22:19-47
+31            <intent-filter>
+31-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:23:13-26:29
+32                <action android:name="android.intent.action.MAIN" />
+32-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:24:17-69
+32-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:24:25-66
+33
+34                <category android:name="android.intent.category.LAUNCHER" />
+34-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:25:17-77
+34-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:25:27-74
+35            </intent-filter>
+36        </activity>
+37        <activity android:name="com.example.myapplication.IntroActivity" >
+37-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:29:9-30:20
+37-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:29:19-48
+38        </activity>
+39        <activity android:name="com.example.myapplication.LoginActivity" >
+39-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:31:9-32:20
+39-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:31:19-48
+40        </activity>
+41        <activity android:name="com.example.myapplication.SignupActivity" >
+41-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:33:9-34:20
+41-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:33:19-49
+42        </activity>
+43        <activity android:name="com.example.myapplication.FindidActivity" >
+43-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:35:9-36:20
+43-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:35:19-49
+44        </activity>
+45        <activity android:name="com.example.myapplication.MypageActivity" >
+45-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:37:9-38:20
+45-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:37:19-49
+46        </activity>
+47        <activity android:name="com.example.myapplication.MypageSettingActivity" >
+47-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:39:9-40:20
+47-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:39:19-56
+48        </activity>
+49        <activity android:name="com.example.myapplication.AlarmActivity" >
+49-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:41:9-42:20
+49-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:41:19-48
+50        </activity>
+51        <activity android:name="com.example.myapplication.SheetmusicActivity" >
+51-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:43:9-44:20
+51-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:43:19-53
+52        </activity>
+53        <activity android:name="com.example.myapplication.ChargeActivity" >
+53-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:45:9-46:20
+53-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:45:19-49
+54        </activity>
+55        <activity android:name="com.example.myapplication.ChangeProfileActivity" >
+55-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:47:9-48:20
+55-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:47:19-56
+56        </activity>
+57        <activity android:name="com.example.myapplication.SheetmusicPostActivity" >
+57-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:49:9-50:20
+57-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:49:19-57
+58        </activity>
+59        <activity android:name="com.example.myapplication.SheetmusicUploadActivity" >
+59-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:51:9-52:20
+59-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:51:19-59
+60        </activity>
+61        <activity android:name="com.example.myapplication.VideoActivity" >
+61-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:53:9-54:20
+61-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:53:19-48
+62        </activity>
+63        <activity android:name="com.example.myapplication.CommunityActivity" >
+63-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:55:9-56:20
+63-->C:\Users\ns933\AndroidStudioProjects\MyApplication\app\src\main\AndroidManifest.xml:55:19-52
+64        </activity>
+65    </application>
+66
+67</manifest>

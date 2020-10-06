@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <!--순위-->
+    <TextView
+        android:id="@+id/TextView_ranking"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="5dp"
+        android:gravity="center"
+        android:text="1"
+        android:textSize="17dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+    <!--곡 이름-->
+    <TextView
+        android:id="@+id/TextView_name_sheetmusic"
+        android:layout_width="280dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:text="하울의 움직이는 성 OST - 인생의 회전목마"
+        app:layout_constraintBottom_toTopOf="@id/TextView_name_seller"
+        app:layout_constraintLeft_toRightOf="@id/TextView_ranking"
+        app:layout_constraintTop_toTopOf="@id/TextView_ranking" />
+    <!--판매자-->
+    <TextView
+        android:id="@+id/TextView_name_seller"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:text="하울"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/TextView_ranking"
+        app:layout_constraintLeft_toRightOf="@id/TextView_ranking"
+        app:layout_constraintTop_toBottomOf="@id/TextView_name_sheetmusic"
+
+        />
+    <!--가격-->
+    <TextView
+        android:id="@+id/TextView_price"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="2,000원"
+        app:layout_constraintBottom_toBottomOf="@id/TextView_name_seller"
+        app:layout_constraintLeft_toRightOf="@id/TextView_name_sheetmusic"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/TextView_ranking" />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
