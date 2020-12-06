@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="320dp"
+    android:layout_height="450dp"
+    android:orientation="vertical"
+    android:background="#eeeeee"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/letter_purchase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="악보 구매"
+            android:textSize="25dp"
+            android:textColor="@color/darkdarkgrey"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+        <ImageView
+            android:id="@+id/close_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/closebutton"
+            app:layout_constraintTop_toTopOf="@id/letter_purchase"
+            app:layout_constraintBottom_toBottomOf="@id/letter_purchase"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="10dp"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!-- 경계선 -->
+    <View
+        android:id="@+id/View_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/linecolor"
+       />
+
+    <TextView
+        android:id="@+id/currenttime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2020-10-29 03:33:37"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/darkdarkgrey"
+        />
+    <TextView
+        android:id="@+id/article_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="마녀 배달부 키키 OST - 바다가 보이는 마을 by 피아니 캐스트"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="20dp"
+        android:textColor="@color/darkdarkgrey"
+
+        />
+    <TextView
+        android:id="@+id/article_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2000원"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/darkdarkgrey"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="보유 캐시"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:textColor="@color/darkdarkgrey"
+            />
+        <TextView
+            android:id="@+id/client_cash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0원"
+            android:gravity="right"
+            android:layout_marginRight="20dp"
+            android:textSize="20dp"
+            android:textColor="@color/darkdarkgrey"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="악보 금액"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:textColor="@color/darkdarkgrey"
+            />
+        <TextView
+            android:id="@+id/article_price_calculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0원"
+            android:gravity="right"
+            android:layout_marginRight="20dp"
+            android:textSize="20dp"
+            android:textColor="@color/darkdarkgrey"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <View
+        android:layout_marginTop="5dp"
+        android:id="@+id/View_line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/linecolor"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="잔여 캐시"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:textSize="20dp"
+            android:textColor="@color/darkdarkgrey"
+            />
+        <TextView
+            android:id="@+id/cashpriceSum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0원"
+            android:gravity="right"
+            android:layout_marginRight="20dp"
+            android:textSize="20dp"
+            android:textColor="@color/darkdarkgrey"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/purchase_btn"
+        android:layout_marginTop="50dp"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:text="구입하기"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+        android:textColor="@color/darkdarkgrey"
+        android:background="@drawable/btn_grey"/>
+
+
+
+
+</LinearLayout>

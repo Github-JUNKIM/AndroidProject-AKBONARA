@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <!--프로필 사진-->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/ImageView_profile"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/icon_sheetmusic"
+
+        />
+
+    <!--판매자-->
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:id="@+id/TextView_name_seller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:text="하울"
+        android:textSize="15dp"
+        app:layout_constraintLeft_toRightOf="@id/ImageView_profile"
+        app:layout_constraintTop_toTopOf="@id/ImageView_profile"
+
+        />
+
+    <!--시간-->
+    <TextView
+        android:id="@+id/upload_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="방금전"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintLeft_toRightOf="@id/TextView_name_seller"
+        app:layout_constraintTop_toTopOf="@id/TextView_name_seller"
+        />
+
+    <!--더보기-->
+
+    <ImageView
+        android:id="@+id/more_btn"
+        android:layout_width="20dp"
+        android:layout_height="10dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/more_btn"
+        app:layout_constraintTop_toTopOf="@id/ImageView_profile"
+        android:layout_marginRight="10dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/EditOrDelete_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/more_btn"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="5dp"
+        android:visibility="gone"
+        >
+        <Button
+            android:id="@+id/Edit_btn"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:text="수정"
+            />
+        <Button
+            android:id="@+id/Delete_btn"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:text="삭제"
+            />
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/user_comment_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="좋은 악보 감사합니다~"
+        android:textSize="15dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintLeft_toLeftOf="@id/TextView_name_seller"
+        app:layout_constraintTop_toBottomOf="@id/TextView_name_seller" />
+
+
+    <!--좋아요-->
+    <ImageView
+        android:id="@+id/user_comment_like_1"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/icon_like"
+        android:layout_marginTop="3dp"
+        app:layout_constraintLeft_toLeftOf="@id/TextView_name_seller"
+        app:layout_constraintTop_toBottomOf="@id/user_comment_content"
+
+        />
+
+    <TextView
+        android:id="@+id/number_of_like"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="5dp"
+        android:text="2"
+        app:layout_constraintBottom_toBottomOf="@id/user_comment_like_1"
+        app:layout_constraintLeft_toRightOf="@id/user_comment_like_1"
+        app:layout_constraintTop_toTopOf="@id/user_comment_like_1" />
+
+    <TextView
+        android:id="@+id/AddDoubleComment_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text="답글달기"
+        app:layout_constraintBottom_toBottomOf="@id/user_comment_like_1"
+        app:layout_constraintLeft_toRightOf="@id/user_comment_like_1"
+        app:layout_constraintTop_toTopOf="@id/user_comment_like_1" />
+
+    <LinearLayout
+        android:id="@+id/expand_btn_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="@id/user_comment_like_1"
+        app:layout_constraintTop_toBottomOf="@id/user_comment_like_1"
+        android:layout_marginTop="3dp"
+        >
+        <ImageView
+            android:id="@+id/image_expand_shrink"
+            android:layout_marginLeft="-3dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/icon_expand"
+            ></ImageView>
+        <TextView
+            android:id="@+id/number_of_doublecomment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="답글 n개 "
+            android:textColor="@color/design_default_color_primary_dark"
+            ></TextView>
+        <TextView
+            android:id="@+id/letter_show_hide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="보기"
+            android:textColor="@color/design_default_color_primary_dark"
+            />
+
+
+    </LinearLayout>
+
+    <!--답글작성 기능-->
+    <LinearLayout
+        android:id="@+id/AddDoubleComment"
+        app:layout_constraintTop_toBottomOf="@+id/expand_btn_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/Close_AddDoubleComment"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/closebutton" />
+
+            <TextView
+                android:id="@+id/title_commentfuction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="답글 작성"
+                android:textColor="@color/cardview_dark_background"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            >
+
+            <EditText
+                android:id="@+id/Double_Comment_Content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/roundedge"
+                android:layout_weight="10"
+                android:paddingTop="5dp"
+                android:paddingLeft="20dp"
+                android:paddingBottom="5dp"
+                />
+            <TextView
+                android:id="@+id/AddDoubleComment_register_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="작성"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerView_doublecomment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/AddDoubleComment"
+        android:visibility="gone"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

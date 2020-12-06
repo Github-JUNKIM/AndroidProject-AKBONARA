@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="10dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/YoutubeVideo"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_weight="4"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+
+        <!--    &lt;!&ndash;유튜브 영상&ndash;&gt;-->
+        <!--    <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView-->
+        <!--        android:id="@+id/YoutubeVideo"-->
+        <!--        android:layout_width="0dp"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_weight="4"-->
+        <!--        android:layout_marginLeft="10dp"-->
+        <!--        android:layout_marginBottom="10dp"-->
+        <!--        android:layout_marginRight="10dp"-->
+        <!--        app:showYouTubeButton="false"-->
+        <!--        app:showVideoCurrentTime="false"-->
+        <!--        app:showFullScreenButton="false"-->
+        <!--        app:showSeekBar="false"-->
+        <!--        app:showVideoDuration="false"-->
+        <!--        />-->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_weight="6"
+            >
+
+            <!--프로필 사진-->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ImageView_profile"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/icon_sheetmusic"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="5dp"
+
+                />
+            <!-- 곡 제목 -->
+            <TextView
+                android:id="@+id/PostName"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:text="하울의 움직이는 성"
+                android:textSize="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ImageView_profile"
+                android:maxLines="1"
+                android:scrollHorizontally="true"
+                android:ellipsize="end"
+                />
+
+
+
+            <!--판매자-->
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:id="@+id/TextView_name_seller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="하울"
+                android:textSize="15dp"
+                app:layout_constraintLeft_toRightOf="@id/ImageView_profile"
+                app:layout_constraintTop_toTopOf="@id/ImageView_profile"
+                />
+
+            <!--시간-->
+            <TextView
+                android:id="@+id/upload_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="방금전"
+                android:layout_marginLeft="15dp"
+                app:layout_constraintLeft_toRightOf="@id/TextView_name_seller"
+                app:layout_constraintTop_toTopOf="@id/ImageView_profile"
+                app:layout_constraintBottom_toBottomOf="@id/ImageView_profile"
+                />
+
+            <!--조회수-->
+            <ImageView
+                android:id="@+id/ImageView_hits"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/icon_eye"
+                app:layout_constraintLeft_toLeftOf="@id/ImageView_profile"
+                app:layout_constraintTop_toBottomOf="@id/ImageView_profile"
+                android:layout_marginTop="40dp"
+
+                />
+
+            <TextView
+                android:id="@+id/number_of_hits"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:text="10"
+                app:layout_constraintBottom_toBottomOf="@id/ImageView_hits"
+                app:layout_constraintLeft_toRightOf="@id/ImageView_hits"
+                app:layout_constraintTop_toTopOf="@id/ImageView_hits" />
+
+            <!--좋아요-->
+            <ImageView
+                android:id="@+id/ImageView_likes"
+                android:layout_marginLeft="10dp"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/icon_like"
+                app:layout_constraintLeft_toRightOf="@id/number_of_hits"
+                app:layout_constraintTop_toTopOf="@id/ImageView_hits"
+                app:layout_constraintBottom_toBottomOf="@id/ImageView_hits"
+
+                />
+            <TextView
+                android:id="@+id/number_of_like"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="10"
+                app:layout_constraintLeft_toRightOf="@id/ImageView_likes"
+                app:layout_constraintTop_toTopOf="@id/ImageView_likes"
+                app:layout_constraintBottom_toBottomOf="@id/ImageView_likes"
+                />
+
+            <!--댓글-->
+
+            <ImageView
+                android:id="@+id/ImageView_comments"
+                android:layout_marginLeft="10dp"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/icon_comment"
+                app:layout_constraintLeft_toRightOf="@id/number_of_like"
+                app:layout_constraintTop_toTopOf="@id/ImageView_likes"
+                app:layout_constraintBottom_toBottomOf="@id/ImageView_likes"
+
+                />
+            <TextView
+                android:id="@+id/number_of_comment"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="10"
+                app:layout_constraintLeft_toRightOf="@id/ImageView_comments"
+                app:layout_constraintTop_toTopOf="@id/ImageView_comments"
+                app:layout_constraintBottom_toBottomOf="@id/ImageView_comments"
+                />
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <!-- 경계선 -->
+    <View
+        android:id="@+id/View_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/linecolor"
+        tools:layout_editor_absoluteX="74dp" />
+
+
+
+
+
+
+
+</LinearLayout>

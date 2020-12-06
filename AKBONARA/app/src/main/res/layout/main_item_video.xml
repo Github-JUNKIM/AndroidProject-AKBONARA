@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="10dp"
+    >
+    <!--영상-->
+    <ImageView
+        android:id="@+id/youtube_thumnail"
+        android:layout_width="200dp"
+        android:layout_height="113dp"
+        />
+
+    <!--영상제목-->
+    <TextView
+        android:id="@+id/videoname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="하울의 움직이는 성 - 인생의 회전"
+        app:layout_constraintLeft_toLeftOf="@id/youtube_thumnail"
+        app:layout_constraintRight_toRightOf="@id/youtube_thumnail"
+        app:layout_constraintTop_toBottomOf="@id/youtube_thumnail"
+        android:maxLines="1"
+        android:scrollHorizontally="true"
+        android:ellipsize="end"
+
+
+        />
+    <!--닉네임-->
+    <TextView
+        android:id="@+id/nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="하울"
+        android:textSize="10dp"
+        app:layout_constraintTop_toBottomOf="@id/videoname" />
+
+    <!--업로드시간-->
+    <TextView
+        android:id="@+id/uploadtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3분전"
+        app:layout_constraintLeft_toLeftOf="@id/nickname"
+        app:layout_constraintTop_toBottomOf="@id/nickname" />
+
+    <!--조회수-->
+    <ImageView
+        android:id="@+id/ImageView_hits"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:src="@drawable/icon_eye"
+        app:layout_constraintTop_toTopOf="@id/uploadtime"
+        app:layout_constraintBottom_toBottomOf="@id/uploadtime"
+        app:layout_constraintRight_toLeftOf="@id/ImageView_likes"
+        android:layout_marginRight="20dp"
+
+        />
+
+    <TextView
+        android:id="@+id/number_of_hits"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginLeft="5dp"
+        android:text="10"
+        app:layout_constraintBottom_toBottomOf="@id/ImageView_hits"
+        app:layout_constraintLeft_toRightOf="@id/ImageView_hits"
+        app:layout_constraintTop_toTopOf="@id/ImageView_hits" />
+
+    <!--좋아요-->
+    <ImageView
+        android:id="@+id/ImageView_likes"
+        android:layout_marginLeft="10dp"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/icon_like"
+        app:layout_constraintRight_toLeftOf="@id/ImageView_comments"
+        app:layout_constraintTop_toTopOf="@id/ImageView_hits"
+        app:layout_constraintBottom_toBottomOf="@id/ImageView_hits"
+        android:layout_marginRight="20dp"
+
+        />
+    <TextView
+        android:id="@+id/number_of_like"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="10"
+        app:layout_constraintLeft_toRightOf="@id/ImageView_likes"
+        app:layout_constraintTop_toTopOf="@id/ImageView_likes"
+        app:layout_constraintBottom_toBottomOf="@id/ImageView_likes"
+        />
+
+    <!--댓글-->
+
+    <ImageView
+        android:id="@+id/ImageView_comments"
+        android:layout_marginLeft="10dp"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/icon_comment"
+        app:layout_constraintRight_toRightOf="@id/youtube_thumnail"
+        app:layout_constraintTop_toTopOf="@id/ImageView_likes"
+        app:layout_constraintBottom_toBottomOf="@id/ImageView_likes"
+        android:layout_marginRight="20dp"
+
+        />
+    <TextView
+        android:id="@+id/number_of_comment"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="10"
+        app:layout_constraintLeft_toRightOf="@id/ImageView_comments"
+        app:layout_constraintTop_toTopOf="@id/ImageView_comments"
+        app:layout_constraintBottom_toBottomOf="@id/ImageView_comments"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

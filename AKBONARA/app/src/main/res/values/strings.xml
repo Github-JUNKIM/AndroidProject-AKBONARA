@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="default_notification_channel_id">Channel ID</string>
+    <string name="default_notification_channel_name" translatable="true">Test</string>
+    <string name="add_name_null">My Application</string>
+
+</resources>

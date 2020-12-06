@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "419377851869",
+    "firebase_url": "https://akbonara-fcm.firebaseio.com",
+    "project_id": "akbonara-fcm",
+    "storage_bucket": "akbonara-fcm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:419377851869:android:3fde26f1b662df5ee95a34",
+        "android_client_info": {
+          "package_name": "com.jun.akbonara"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "419377851869-6d01dl5au02ihhsmo6tlaqn9ub8o6jva.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvWLC1jTqZx2khtq2yBcr44TbEDrv3VM0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "419377851869-6d01dl5au02ihhsmo6tlaqn9ub8o6jva.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
